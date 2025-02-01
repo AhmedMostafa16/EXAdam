@@ -42,7 +42,7 @@ Official implementation of **EXAdam** optimizer from the paper ["EXAdam: The Pow
 
 ### Complete Training Example
 
-Below is an example code snippet for training a general model with NLL loss with SophiaG. Please refer to the next section for guidelines on hyperparameter tuning.
+Below is an example code snippet for training a general model with NLL loss with EXAdam.
 
 ```python
 import torch
