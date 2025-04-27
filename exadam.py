@@ -23,7 +23,6 @@ SOFTWARE.
 """
 
 from typing import Any, Dict, Iterable, Tuple, Union
-import numpy as np
 import torch
 
 Params = Union[Iterable[torch.Tensor], Iterable[Dict[str, Any]]]
@@ -125,12 +124,9 @@ class EXAdam(torch.optim.Optimizer):
                 # Bias-corrected gradient
                 g_tilde = grad.div(bias_correction1) * d1
 
-                # Compute the step size
-                step_size = lr * np.log(np.sqrt(step + 1) * self.sqrt_2)
-
                 # Update the parameters
                 theta: torch.Tensor = (
-                    -step_size * (m_tilde + g_tilde) / (v_tilde.sqrt() + eps)
+                    -lr * (m_tilde + g_tilde) / (v_tilde.sqrt() + eps)
                 )
 
                 p.data.add_(theta)
