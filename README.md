@@ -162,11 +162,14 @@ if __name__ == "__main__":
 If you find EXAdam useful in your research, please cite:
 
 ```bibtex
-@article{adly2024exadam,
-  title={EXAdam: The Power of Adaptive Cross-Moments},
-  author={Adly, Ahmed M},
-  journal={arXiv preprint arXiv:2412.20302},
-  year={2024}
+@misc{adly2025exadampoweradaptivecrossmoments,
+      title={EXAdam: The Power of Adaptive Cross-Moments}, 
+      author={Ahmed M. Adly},
+      year={2025},
+      eprint={2412.20302},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2412.20302}, 
 }
 ```
 
