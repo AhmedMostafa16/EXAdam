@@ -58,9 +58,6 @@ class EXAdam(torch.optim.Optimizer):
         )
         super().__init__(params, defaults)
 
-        # Pre-compute sqrt(2) for efficiency
-        self.sqrt_2 = np.sqrt(2.0)
-
     def __setstate__(self, state):
         super().__setstate__(state)
 
