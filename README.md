@@ -21,7 +21,6 @@ Official implementation of **EXAdam** optimizer from the paper ["EXAdam: The Pow
 
 - Python 3.11+
 - [PyTorch](https://pytorch.org)
-- [NumPy](https://numpy.org)
 
 ## Detailed Usage
 
